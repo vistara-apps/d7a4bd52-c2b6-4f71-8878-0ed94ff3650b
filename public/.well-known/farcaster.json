@@ -1,0 +1,30 @@
+{
+  "accountAssociation": {
+    "header": "",
+    "payload": "",
+    "signature": ""
+  },
+  "frame": {
+    "version": "1",
+    "name": "DineVerify",
+    "subtitle": "Built with Zara",
+    "description": "DineVerify is a Base Mini App built with Zara.",
+    "iconUrl": "https://0co.to/images/zara-2.png",
+    "homeUrl": "https://app-4ff3650b-cwms.vercel.app",
+    "splashImageUrl": "https://app-4ff3650b-cwms.vercel.app/splash.png",
+    "splashBackgroundColor": "#000000",
+    "heroImageUrl": "https://app-4ff3650b-cwms.vercel.app/image.png",
+    "tagline": "DineVerify",
+    "screenshotUrls": [
+      "https://app-4ff3650b-cwms.vercel.app/screenshot.png",
+      "https://app-4ff3650b-cwms.vercel.app/screenshot.png"
+    ],
+    "primaryCategory": "social",
+    "tags": [
+      "base",
+      "miniapp",
+      "onchainkit"
+    ],
+    "webhookUrl": "https://app-4ff3650b-cwms.vercel.app/api/webhook"
+  }
+}
