@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* COINBASE Theme - Dark Navy */
+  --color-bg: #0a1929;
+  --color-fg: #e3f2fd;
+  --color-surface: #132f4c;
+  --color-primary: #0052ff;
+  --color-accent: #1976d2;
+  --color-success: #2e7d32;
+  --color-warning: #ed6c02;
+  --color-error: #d32f2f;
+  --color-border: rgba(255, 255, 255, 0.12);
+}
+
+@layer base {
+  * {
+    @apply border-gray-700;
+  }
+  
+  body {
+    @apply bg-bg text-fg antialiased;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply rounded-lg;
+    background: rgba(19, 47, 76, 0.6);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .btn-primary {
+    @apply bg-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-accent transition-all duration-200 shadow-lg hover:shadow-xl;
+  }
+
+  .btn-secondary {
+    @apply bg-surface text-fg px-6 py-3 rounded-lg font-medium hover:bg-opacity-80 transition-all duration-200;
+  }
+
+  .input-field {
+    @apply w-full px-4 py-3 rounded-lg bg-surface text-fg;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .input-field:focus {
+    @apply outline-none;
+    border-color: var(--color-primary);
+  }
+
+  .checkbox-custom {
+    @apply w-5 h-5 rounded;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    background: transparent;
+  }
+
+  .checkbox-custom:checked {
+    @apply bg-primary;
+    border-color: var(--color-primary);
+  }
+
+  .task-card {
+    @apply glass-card p-4 hover:bg-opacity-80 transition-all duration-200;
+  }
+
+  .badge {
+    @apply inline-flex items-center px-3 py-1 rounded-full text-sm font-medium;
+  }
+
+  .badge-success {
+    @apply badge bg-success bg-opacity-20 text-success;
+  }
+
+  .badge-warning {
+    @apply badge bg-warning bg-opacity-20 text-warning;
+  }
+
+  .badge-primary {
+    @apply badge bg-primary bg-opacity-20 text-primary;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+  }
+}

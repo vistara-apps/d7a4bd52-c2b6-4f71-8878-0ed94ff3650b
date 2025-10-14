@@ -1,0 +1,17 @@
+{
+  "frame": {
+    "name": "DineVerify Mini App",
+    "homeUrl": "https://dineverify.app",
+    "iconUrl": "https://dineverify.app/icon.png",
+    "version": "vNext",
+    "webhookUrl": "https://api.dineverify.app/minikit-webhook",
+    "splashImageUrl": "https://dineverify.app/splash.png",
+    "splashBackgroundColor": "#0a1929"
+  },
+  "accountAssociation": {
+    "header": "DineVerify requires your signature to link your Farcaster account for secure on-chain actions and personalized experience.",
+    "payload": {
+      "domain": "dineverify.app"
+    }
+  }
+}
